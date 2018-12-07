@@ -1,0 +1,2 @@
+location_monitor
+-DCATKIN_DEVEL_PREFIX=/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/devel -DCMAKE_INSTALL_PREFIX=/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/install -G Unix Makefiles

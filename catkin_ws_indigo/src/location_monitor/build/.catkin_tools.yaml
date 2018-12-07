@@ -1,0 +1,6 @@
+devel_space: /home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor/devel
+install: false
+install_space: /home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor/install
+profile: default
+source_space: /home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor/src
+workspace: /home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor
