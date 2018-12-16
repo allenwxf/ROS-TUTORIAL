@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(location_monitor_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(location_monitor_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(location_monitor_EXPORTED_TARGETS "")
+set(location_monitor_EXPORTED_TARGETS "location_monitor_generate_messages_cpp;location_monitor_generate_messages_lisp;location_monitor_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${location_monitor_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -153,7 +153,7 @@ foreach(t ${location_monitor_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs;nav_msgs")
+set(depends "roscpp;rospy;std_msgs;nav_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -182,7 +182,7 @@ foreach(depend ${depends})
   list(APPEND location_monitor_EXPORTED_TARGETS ${${location_monitor_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "location_monitor-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${location_monitor_DIR}/${extra})

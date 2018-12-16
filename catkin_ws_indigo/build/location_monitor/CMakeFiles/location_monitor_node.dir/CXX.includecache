@@ -6,11 +6,35 @@
 
 #IncludeRegexTransform: 
 
+/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/devel/include/location_monitor/LandmarkDistance.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor/src/location_monitor.cpp
+math.h
+-
+vector
+-
+string
+-
 ros/ros.h
 /home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor/src/ros/ros.h
 nav_msgs/Odometry.h
 /home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor/src/nav_msgs/Odometry.h
+location_monitor/LandmarkDistance.h
+/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor/src/location_monitor/LandmarkDistance.h
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h

@@ -3,6 +3,6 @@ prefix=/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/install
 Name: location_monitor
 Description: Description of location_monitor
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/install/include
 Libs: -L/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/install/lib 
-Requires: roscpp rospy std_msgs nav_msgs
+Requires: roscpp rospy std_msgs nav_msgs message_runtime

@@ -309,6 +309,9 @@ location_monitor_BINARY_DIR:STATIC=/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_in
 //Value Computed by CMake
 location_monitor_SOURCE_DIR:STATIC=/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/src/location_monitor
 
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/indigo/share/message_generation/cmake
+
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 

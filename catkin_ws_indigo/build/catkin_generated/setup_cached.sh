@@ -7,5 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PKG_CONFIG_PATH="/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/wxf/Workspace/ROS-TUTORIAL/catkin_ws_indigo/build"
