@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/wxf/Workspace/ROS-TUTORIAL/intellibot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wxf/Workspace/ROS-TUTORIAL/intellibot_ws/install -G Unix Makefiles
